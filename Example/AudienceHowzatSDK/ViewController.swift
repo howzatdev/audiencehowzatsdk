@@ -6,13 +6,17 @@
 //  Copyright (c) 2021 jungleesubbu. All rights reserved.
 //
 
-import UIKit
+import UIKit;
+import AudienceHowzatSDK;
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad();
+        print("View");
         // Do any additional setup after loading the view, typically from a nib.
+        let howzatAudienceMain=HowzatAudience();
+               howzatAudienceMain.printInstallationStatus();
     }
 
     override func didReceiveMemoryWarning() {

@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		323E22BFB3299E37BA5D1F55 /* Pods-AudienceHowzatSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudienceHowzatSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AudienceHowzatSDK_Tests/Pods-AudienceHowzatSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3F7ABAB799A46F0E5FC075E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3F7ABAB799A46F0E5FC075E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4A15C5C4B91AD08E02B3AAFE /* Pods-AudienceHowzatSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudienceHowzatSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-AudienceHowzatSDK_Example/Pods-AudienceHowzatSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5E687FDB44D702E4B5D58825 /* Pods-AudienceHowzatSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudienceHowzatSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-AudienceHowzatSDK_Example/Pods-AudienceHowzatSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AudienceHowzatSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudienceHowzatSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,10 +43,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6D379D1B4EEA5EB5E7846A18 /* Pods-AudienceHowzatSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudienceHowzatSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-AudienceHowzatSDK_Tests/Pods-AudienceHowzatSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A9AD64455CC710FB5D943BA6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A9AD64455CC710FB5D943BA6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D687D1448027C18D7E7AFAAF /* Pods_AudienceHowzatSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudienceHowzatSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8C51D8DD2780E891D7EFCA /* Pods_AudienceHowzatSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudienceHowzatSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC1E2181CC01D2128632F971 /* AudienceHowzatSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AudienceHowzatSDK.podspec; path = ../AudienceHowzatSDK.podspec; sourceTree = "<group>"; };
+		FC1E2181CC01D2128632F971 /* AudienceHowzatSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AudienceHowzatSDK.podspec; path = ../AudienceHowzatSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				323E22BFB3299E37BA5D1F55 /* Pods-AudienceHowzatSDK_Tests.debug.xcconfig */,
 				6D379D1B4EEA5EB5E7846A18 /* Pods-AudienceHowzatSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
