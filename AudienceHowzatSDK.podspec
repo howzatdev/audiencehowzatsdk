@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'howzatdev' => 'devaccounts@howzat.com' }
-  s.source           = { :git => 'https://github.com/howzatdev/audiencehowzatsdk.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/howzatdev/audiencehowzatsdk.git', :tag => s.version.to_s,:branch => 'master' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
@@ -30,5 +30,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Starscream', '~> 4.0.0'
 end

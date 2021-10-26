@@ -7,72 +7,145 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DB4BE07EB2AECFD63CD41B5DE04B200 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		00733520BB34C92EFF9CEAA199FF5756 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2727BA14E02E7210DD6B547EA7D394 /* WebSocket.swift */; };
+		0EB4A8B0658DBACF5A299F4B967EC800 /* FoundationSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5831A57C2E79638C447411ED69EB6C42 /* FoundationSecurity.swift */; };
+		14294220B86AD5E9C027D552CBFE909F /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0925310BE76B051E1B51E7FBB37F35 /* Engine.swift */; };
+		16BBA82058B3111DAED7728413F8443D /* StringHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D70531198624C7D8B14FF91C62FF6B /* StringHTTPHandler.swift */; };
+		1A310AC72C5E0C554DA782A9845F0773 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175E21DED4337E7BBD3EF7424F315F6 /* Data+Extensions.swift */; };
 		293CEC7931CC6B2591DB841680673D2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3186E11CB57B7C2D5C548C0B3AF4CECA /* Pods-AudienceHowzatSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DC2BF62DBE006E6715C656EED23119 /* Pods-AudienceHowzatSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33FAFA5B27281DAB00E29499 /* HowzatAudience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FAFA5A27281DAB00E29499 /* HowzatAudience.swift */; };
-		5ABBBF9326CB7A194E51BF136B66743A /* Pods-AudienceHowzatSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F3B5F2F435E638FB56E305AF00A285 /* Pods-AudienceHowzatSDK_Example-dummy.m */; };
+		2CE3CE0C68280D114760E2C6E0F6FFB6 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD212064ED1CC47B2560F6E20526B3B /* Server.swift */; };
+		4357DA2C61E569CBA628231292761DAF /* NativeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ADCC3B462E7AE2D80872C7A66CA4A7 /* NativeEngine.swift */; };
+		59F45376E030D05B9935A7475D55BC22 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC292255BA6A323D7D1C01215CC6591 /* Security.swift */; };
+		5F3E7B1B5240C94A9C86CFA5D121098E /* FoundationTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7E34251E9353A38AC748BB94EDC575 /* FoundationTransport.swift */; };
+		6A910EC46E44E8D775AAC7B27D1D14AA /* TCPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CCA8582A00BBFBC2E9AFFC1C1D53A9 /* TCPTransport.swift */; };
+		751FC909A7C43A7E3C249A33EF5AA7F0 /* WSCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1918C09D193EF7F62A7C2611F12AC44B /* WSCompression.swift */; };
+		7A4AA82A5F72A3B851108E6517CF5910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7D7D60CB777F7AD0DFAE299C41D847F7 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EAFCD04DEECC2AC6B8727048A80617 /* Compression.swift */; };
+		7E3B9D326F5EF9CBAB4EF42365E1E734 /* Pods-AudienceHowzatSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DC2BF62DBE006E6715C656EED23119 /* Pods-AudienceHowzatSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84C0198A334DB8D0B028FEA37404420D /* FrameCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C291A02C054326B5C6022EACD814E4 /* FrameCollector.swift */; };
+		8B2F75EBBE063AFF0C062F5717578E96 /* WebSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62AC07A9271D8996F97CC35856BA647 /* WebSocketServer.swift */; };
 		8EA1ED94876AA8BC2D232D01BC4C9C91 /* Pods-AudienceHowzatSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ABEABD7C4717EEDBA9C129F0189933 /* Pods-AudienceHowzatSDK_Tests-dummy.m */; };
-		DFCC89C7207FA6E9AAACD3F8EBA1C5C0 /* AudienceHowzatSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C36F16D13D95FADB8A18EA80D9DA83B /* AudienceHowzatSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E486C6029E576DD4B91E31C5E10ACB3F /* AudienceHowzatSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C527B8B69E23C3BD5A15BA426C9A21C /* AudienceHowzatSDK-dummy.m */; };
+		95BE4FC5B04A3449E5ED8F8017E559A5 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8BC22AA74FEDA9CF44852D28F68A4 /* Transport.swift */; };
+		97AAAFDB9327CF9E6310970B4D8676F2 /* FoundationHTTPServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F95157FC4CC8593A1B1E4607562122 /* FoundationHTTPServerHandler.swift */; };
+		9E5FE8315E835CDA51A2DBC50EEB7FA5 /* AudienceHowzatSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D543B85D4C4031355931638899CF3B /* AudienceHowzatSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A503859528DFE14BA7231E983147F33F /* WSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9AF7BDFE0F03CE129D72D85FCA460 /* WSEngine.swift */; };
+		A9F1B7FA294B19C11892DC3EDB732BA1 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B65F09370A4D9877255EC1C47060A2 /* Starscream-dummy.m */; };
+		B6EFC51BAF6C4FCE132205EDD6546C47 /* HowzatAudience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03DA2B71E08906E99BEF22AB49A514 /* HowzatAudience.swift */; };
+		BAB66E54AC31F5C7C0DAED3A25D67F65 /* AudienceHowzatSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD56460625C014A37E638BFE61785EFA /* AudienceHowzatSDK-dummy.m */; };
+		BAC60D73ADE9A5F6A5DA7E1603EAE5AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C2DC80597F681ACADD74965120B17716 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CB6C6D4E973C081562A8CBA3DFCE8B57 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECFB158E08A6502A38761C96CB68975B /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D49DF8FD56FB8D595E127C026E884BA4 /* Framer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1454E39E11FD28A611495E03B2015FD4 /* Framer.swift */; };
+		E0FF0C316349C5F11DDD1281F2AFD3C5 /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED0E33A6DD024AC0E71FEF3EA74D7C /* HTTPHandler.swift */; };
+		F021EDD169A17C305F1A035760C61D6A /* Pods-AudienceHowzatSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F3B5F2F435E638FB56E305AF00A285 /* Pods-AudienceHowzatSDK_Example-dummy.m */; };
+		F0D65408473C0D8306F4DE13EF7C37D8 /* FoundationHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF39A541BA78B8472A0F9D4E3504B90 /* FoundationHTTPHandler.swift */; };
 		F7341AE3701F395C5D3B76E5B93F4AE5 /* Pods-AudienceHowzatSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E842CF1C291B25209596E9241D8989 /* Pods-AudienceHowzatSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9102F789C6049E7F1CD4433F6C4B9D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		576CD966591AADAE50C8296ECC57D44B /* PBXContainerItemProxy */ = {
+		505B344993AE83384C11824D5E5F546E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 19ABA150668906DD6776E544DD10F8D8;
-			remoteInfo = AudienceHowzatSDK;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
 		};
-		F1781ABDD4E6224A3C7726E1E3272220 /* PBXContainerItemProxy */ = {
+		65EB9C5C36100B51F8F44C4FB1BC6EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		8B3571F105B5C4F88DA6E491D1D08CEA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BD67F278EC720A7A6C40FC7505E6CE92;
 			remoteInfo = "Pods-AudienceHowzatSDK_Example";
 		};
+		A545AB853559BCD331B134B8388DAB2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19ABA150668906DD6776E544DD10F8D8;
+			remoteInfo = AudienceHowzatSDK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010F5C43A348BC3C417C21FA354444E2 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
 		109D017AFF72201B1F2446EE8E73FE25 /* Pods-AudienceHowzatSDK_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AudienceHowzatSDK_Example"; path = Pods_AudienceHowzatSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1454E39E11FD28A611495E03B2015FD4 /* Framer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Framer.swift; path = Sources/Framer/Framer.swift; sourceTree = "<group>"; };
+		15287B5C1A131BACF608F9F129A332C2 /* AudienceHowzatSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AudienceHowzatSDK.release.xcconfig; sourceTree = "<group>"; };
 		16ABEABD7C4717EEDBA9C129F0189933 /* Pods-AudienceHowzatSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudienceHowzatSDK_Tests-dummy.m"; sourceTree = "<group>"; };
-		1C36F16D13D95FADB8A18EA80D9DA83B /* AudienceHowzatSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AudienceHowzatSDK-umbrella.h"; sourceTree = "<group>"; };
-		1C527B8B69E23C3BD5A15BA426C9A21C /* AudienceHowzatSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AudienceHowzatSDK-dummy.m"; sourceTree = "<group>"; };
-		20E39AADADF05A4E75B372ACDAF39BD2 /* AudienceHowzatSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AudienceHowzatSDK-Info.plist"; sourceTree = "<group>"; };
-		2809B0C7027AC3682592F3F8A63C9AA4 /* AudienceHowzatSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AudienceHowzatSDK.debug.xcconfig; sourceTree = "<group>"; };
-		33FAFA5A27281DAB00E29499 /* HowzatAudience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HowzatAudience.swift; path = AudienceHowzatSDK/Classes/HowzatAudience.swift; sourceTree = "<group>"; };
-		3601999104C15D8CB20AC62DF676145C /* AudienceHowzatSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudienceHowzatSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D70531198624C7D8B14FF91C62FF6B /* StringHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringHTTPHandler.swift; path = Sources/Framer/StringHTTPHandler.swift; sourceTree = "<group>"; };
+		1918C09D193EF7F62A7C2611F12AC44B /* WSCompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSCompression.swift; path = Sources/Compression/WSCompression.swift; sourceTree = "<group>"; };
+		21B65F09370A4D9877255EC1C47060A2 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		2C1CF04602B9D61F89BCC51DEA7939B0 /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
+		317E311CDCFB9F0E88F359B1BB821EE9 /* AudienceHowzatSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AudienceHowzatSDK.modulemap; sourceTree = "<group>"; };
+		35ED0E33A6DD024AC0E71FEF3EA74D7C /* HTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHandler.swift; path = Sources/Framer/HTTPHandler.swift; sourceTree = "<group>"; };
+		3601999104C15D8CB20AC62DF676145C /* AudienceHowzatSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AudienceHowzatSDK; path = AudienceHowzatSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C291A02C054326B5C6022EACD814E4 /* FrameCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameCollector.swift; path = Sources/Framer/FrameCollector.swift; sourceTree = "<group>"; };
 		3A1383763E52FECC6FD3BD2FC01E0182 /* Pods-AudienceHowzatSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudienceHowzatSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3AF39A541BA78B8472A0F9D4E3504B90 /* FoundationHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPHandler.swift; path = Sources/Framer/FoundationHTTPHandler.swift; sourceTree = "<group>"; };
+		3D2C9C58F170BAAD03932675D8D02074 /* AudienceHowzatSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AudienceHowzatSDK.debug.xcconfig; sourceTree = "<group>"; };
+		3D7E34251E9353A38AC748BB94EDC575 /* FoundationTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationTransport.swift; path = Sources/Transport/FoundationTransport.swift; sourceTree = "<group>"; };
 		40DC2BF62DBE006E6715C656EED23119 /* Pods-AudienceHowzatSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AudienceHowzatSDK_Example-umbrella.h"; sourceTree = "<group>"; };
 		423C9048DF92AEA473B562E0E357B4C5 /* Pods-AudienceHowzatSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudienceHowzatSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		48AE2647B39BDD6FFEF03F8E78C47709 /* AudienceHowzatSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AudienceHowzatSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		53D6F04C43D5CC810E1BD10688AD2EBA /* AudienceHowzatSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AudienceHowzatSDK.release.xcconfig; sourceTree = "<group>"; };
+		4A0925310BE76B051E1B51E7FBB37F35 /* Engine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = Sources/Engine/Engine.swift; sourceTree = "<group>"; };
+		4D2727BA14E02E7210DD6B547EA7D394 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		4FC292255BA6A323D7D1C01215CC6591 /* Security.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Security.swift; path = Sources/Security/Security.swift; sourceTree = "<group>"; };
+		56ADCC3B462E7AE2D80872C7A66CA4A7 /* NativeEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeEngine.swift; path = Sources/Engine/NativeEngine.swift; sourceTree = "<group>"; };
+		56CCA8582A00BBFBC2E9AFFC1C1D53A9 /* TCPTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPTransport.swift; path = Sources/Transport/TCPTransport.swift; sourceTree = "<group>"; };
+		5831A57C2E79638C447411ED69EB6C42 /* FoundationSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationSecurity.swift; path = Sources/Security/FoundationSecurity.swift; sourceTree = "<group>"; };
 		5F000351CE83EB3CA4BA5EF5D6E57D52 /* Pods-AudienceHowzatSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AudienceHowzatSDK_Example.modulemap"; sourceTree = "<group>"; };
-		6491EEBE70D58A3C863233AFF8AD532F /* AudienceHowzatSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AudienceHowzatSDK.modulemap; sourceTree = "<group>"; };
+		7175E21DED4337E7BBD3EF7424F315F6 /* Data+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extensions.swift"; path = "Sources/DataBytes/Data+Extensions.swift"; sourceTree = "<group>"; };
 		724CB8B7541BE83720E2221E0CD959DB /* Pods-AudienceHowzatSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudienceHowzatSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		81F95157FC4CC8593A1B1E4607562122 /* FoundationHTTPServerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPServerHandler.swift; path = Sources/Framer/FoundationHTTPServerHandler.swift; sourceTree = "<group>"; };
+		85C44A9AB6F12498BFC8233B9D599206 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ABF04615D3A195031653007379E5554 /* AudienceHowzatSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AudienceHowzatSDK-Info.plist"; sourceTree = "<group>"; };
 		8BB4502EACE501D928320E539493F3E9 /* Pods-AudienceHowzatSDK_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AudienceHowzatSDK_Tests"; path = Pods_AudienceHowzatSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD061D53BD510DFC9FA60EA44507881 /* Pods-AudienceHowzatSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudienceHowzatSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8E03DA2B71E08906E99BEF22AB49A514 /* HowzatAudience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HowzatAudience.swift; path = AudienceHowzatSDK/Classes/HowzatAudience.swift; sourceTree = "<group>"; };
+		8ED9AF7BDFE0F03CE129D72D85FCA460 /* WSEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSEngine.swift; path = Sources/Engine/WSEngine.swift; sourceTree = "<group>"; };
 		928CF1AEB93D6392BE5C3B4C296F44A3 /* Pods-AudienceHowzatSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudienceHowzatSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		96F96F0B143EEFD83D9114885106071A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9357D61506695B4EDB5014C06BE56A43 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
 		9D603DE1646D78063C88B437E6A940B0 /* Pods-AudienceHowzatSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudienceHowzatSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1CDAEE145D873427BE7797C40712BE4 /* AudienceHowzatSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AudienceHowzatSDK-prefix.pch"; sourceTree = "<group>"; };
 		A2736513B093B475CF3BA9E5ABD0576B /* Pods-AudienceHowzatSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudienceHowzatSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A2D543B85D4C4031355931638899CF3B /* AudienceHowzatSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AudienceHowzatSDK-umbrella.h"; sourceTree = "<group>"; };
+		A2EAFCD04DEECC2AC6B8727048A80617 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression/Compression.swift; sourceTree = "<group>"; };
+		A371807C4908893DEA6C7BE7B4D0259A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A62AC07A9271D8996F97CC35856BA647 /* WebSocketServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketServer.swift; path = Sources/Server/WebSocketServer.swift; sourceTree = "<group>"; };
+		BD56460625C014A37E638BFE61785EFA /* AudienceHowzatSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AudienceHowzatSDK-dummy.m"; sourceTree = "<group>"; };
 		C939D8393A63393D13753F09E6E477E6 /* Pods-AudienceHowzatSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudienceHowzatSDK_Example-Info.plist"; sourceTree = "<group>"; };
+		C9C8BC22AA74FEDA9CF44852D28F68A4 /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/Transport/Transport.swift; sourceTree = "<group>"; };
 		D2E842CF1C291B25209596E9241D8989 /* Pods-AudienceHowzatSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AudienceHowzatSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		DEE77C37828B3406516412CCEA5DD7FB /* Pods-AudienceHowzatSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AudienceHowzatSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		DEEC9B809382508F1E93CE99291CA4F0 /* AudienceHowzatSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AudienceHowzatSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DFD212064ED1CC47B2560F6E20526B3B /* Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Server.swift; path = Sources/Server/Server.swift; sourceTree = "<group>"; };
 		E185DD0800DCB043CA10B1179D6A77E9 /* Pods-AudienceHowzatSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudienceHowzatSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1C5DFC761246B02BA8B4A7CD98100A1 /* Pods-AudienceHowzatSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudienceHowzatSDK_Tests-Info.plist"; sourceTree = "<group>"; };
+		E1DDEF3FC55D6957F753825BC2793AA7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		E4A4642B75F24AC1F6C09D56CE838FD0 /* Pods-AudienceHowzatSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudienceHowzatSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E6B8353DB672E6C84ABAF6B044BC47F3 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
+		ECFB158E08A6502A38761C96CB68975B /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
 		F2F3B5F2F435E638FB56E305AF00A285 /* Pods-AudienceHowzatSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudienceHowzatSDK_Example-dummy.m"; sourceTree = "<group>"; };
-		F37BF1C29193B7DE8154F24EFC272692 /* AudienceHowzatSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AudienceHowzatSDK-prefix.pch"; sourceTree = "<group>"; };
-		F4479A08D5165CA0A051CEF14DB3DD2B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		12FE887348231E9F9F459EAC31E89B06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A4AA82A5F72A3B851108E6517CF5910 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D8DAE3DD356308B448BDEDE1C2958AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,33 +154,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3026EDDEC0DC97A045DB2FE1BCD3B4C3 /* Frameworks */ = {
+		B4E7E010B6DC28D1295E811B050F4A03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DB4BE07EB2AECFD63CD41B5DE04B200 /* Foundation.framework in Frameworks */,
+				C2DC80597F681ACADD74965120B17716 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACF92AA607777ED4549D5EB1810D3192 /* Frameworks */ = {
+		C1739B564BD66C892F0E1F8166015787 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9102F789C6049E7F1CD4433F6C4B9D6 /* Foundation.framework in Frameworks */,
+				BAC60D73ADE9A5F6A5DA7E1603EAE5AE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E4D61533164E6CF3DBD5CEFC70FBE8F /* Products */ = {
+		00B2FEDCAC8A8BACE0F9A4E951E14F8C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3601999104C15D8CB20AC62DF676145C /* AudienceHowzatSDK.framework */,
-				109D017AFF72201B1F2446EE8E73FE25 /* Pods-AudienceHowzatSDK_Example */,
-				8BB4502EACE501D928320E539493F3E9 /* Pods-AudienceHowzatSDK_Tests */,
+				7629874EBAAE6E64DF87ACB68FB5A08E /* Starscream */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		1E26DF22C384B8074C131EC91BEA2D69 /* Pods-AudienceHowzatSDK_Example */ = {
@@ -136,21 +207,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3ECF4C3EA64FC65B97AA8BC3E7CBE3EC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6491EEBE70D58A3C863233AFF8AD532F /* AudienceHowzatSDK.modulemap */,
-				1C527B8B69E23C3BD5A15BA426C9A21C /* AudienceHowzatSDK-dummy.m */,
-				20E39AADADF05A4E75B372ACDAF39BD2 /* AudienceHowzatSDK-Info.plist */,
-				F37BF1C29193B7DE8154F24EFC272692 /* AudienceHowzatSDK-prefix.pch */,
-				1C36F16D13D95FADB8A18EA80D9DA83B /* AudienceHowzatSDK-umbrella.h */,
-				2809B0C7027AC3682592F3F8A63C9AA4 /* AudienceHowzatSDK.debug.xcconfig */,
-				53D6F04C43D5CC810E1BD10688AD2EBA /* AudienceHowzatSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AudienceHowzatSDK";
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,13 +215,105 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		5E712008FF3126DCB831B8777DD53C2A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				317E311CDCFB9F0E88F359B1BB821EE9 /* AudienceHowzatSDK.modulemap */,
+				BD56460625C014A37E638BFE61785EFA /* AudienceHowzatSDK-dummy.m */,
+				8ABF04615D3A195031653007379E5554 /* AudienceHowzatSDK-Info.plist */,
+				A1CDAEE145D873427BE7797C40712BE4 /* AudienceHowzatSDK-prefix.pch */,
+				A2D543B85D4C4031355931638899CF3B /* AudienceHowzatSDK-umbrella.h */,
+				3D2C9C58F170BAAD03932675D8D02074 /* AudienceHowzatSDK.debug.xcconfig */,
+				15287B5C1A131BACF608F9F129A332C2 /* AudienceHowzatSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AudienceHowzatSDK";
+			sourceTree = "<group>";
+		};
+		6424C268ABD48A6EBBB9F5EBD4336D49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3601999104C15D8CB20AC62DF676145C /* AudienceHowzatSDK */,
+				109D017AFF72201B1F2446EE8E73FE25 /* Pods-AudienceHowzatSDK_Example */,
+				8BB4502EACE501D928320E539493F3E9 /* Pods-AudienceHowzatSDK_Tests */,
+				891B2270823847ED23F2ECFC28F935EC /* Starscream */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7629874EBAAE6E64DF87ACB68FB5A08E /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				A2EAFCD04DEECC2AC6B8727048A80617 /* Compression.swift */,
+				7175E21DED4337E7BBD3EF7424F315F6 /* Data+Extensions.swift */,
+				4A0925310BE76B051E1B51E7FBB37F35 /* Engine.swift */,
+				3AF39A541BA78B8472A0F9D4E3504B90 /* FoundationHTTPHandler.swift */,
+				81F95157FC4CC8593A1B1E4607562122 /* FoundationHTTPServerHandler.swift */,
+				5831A57C2E79638C447411ED69EB6C42 /* FoundationSecurity.swift */,
+				3D7E34251E9353A38AC748BB94EDC575 /* FoundationTransport.swift */,
+				37C291A02C054326B5C6022EACD814E4 /* FrameCollector.swift */,
+				1454E39E11FD28A611495E03B2015FD4 /* Framer.swift */,
+				35ED0E33A6DD024AC0E71FEF3EA74D7C /* HTTPHandler.swift */,
+				56ADCC3B462E7AE2D80872C7A66CA4A7 /* NativeEngine.swift */,
+				4FC292255BA6A323D7D1C01215CC6591 /* Security.swift */,
+				DFD212064ED1CC47B2560F6E20526B3B /* Server.swift */,
+				16D70531198624C7D8B14FF91C62FF6B /* StringHTTPHandler.swift */,
+				56CCA8582A00BBFBC2E9AFFC1C1D53A9 /* TCPTransport.swift */,
+				C9C8BC22AA74FEDA9CF44852D28F68A4 /* Transport.swift */,
+				4D2727BA14E02E7210DD6B547EA7D394 /* WebSocket.swift */,
+				A62AC07A9271D8996F97CC35856BA647 /* WebSocketServer.swift */,
+				1918C09D193EF7F62A7C2611F12AC44B /* WSCompression.swift */,
+				8ED9AF7BDFE0F03CE129D72D85FCA460 /* WSEngine.swift */,
+				C34F19E6E210C87A192216575C48E771 /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		9268604F72F74762E69C34C1051B6FB9 /* AudienceHowzatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8E03DA2B71E08906E99BEF22AB49A514 /* HowzatAudience.swift */,
+				ABF6D82CF649E7B56AB89B27AD612F3A /* Pod */,
+				5E712008FF3126DCB831B8777DD53C2A /* Support Files */,
+			);
+			name = AudienceHowzatSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		ABF6D82CF649E7B56AB89B27AD612F3A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DEEC9B809382508F1E93CE99291CA4F0 /* AudienceHowzatSDK.podspec */,
+				A371807C4908893DEA6C7BE7B4D0259A /* LICENSE */,
+				E1DDEF3FC55D6957F753825BC2793AA7 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C34F19E6E210C87A192216575C48E771 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9357D61506695B4EDB5014C06BE56A43 /* Starscream.modulemap */,
+				21B65F09370A4D9877255EC1C47060A2 /* Starscream-dummy.m */,
+				85C44A9AB6F12498BFC8233B9D599206 /* Starscream-Info.plist */,
+				010F5C43A348BC3C417C21FA354444E2 /* Starscream-prefix.pch */,
+				ECFB158E08A6502A38761C96CB68975B /* Starscream-umbrella.h */,
+				2C1CF04602B9D61F89BCC51DEA7939B0 /* Starscream.debug.xcconfig */,
+				E6B8353DB672E6C84ABAF6B044BC47F3 /* Starscream.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				DA06FA06D73AF35520F85192793EE1F1 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				0E4D61533164E6CF3DBD5CEFC70FBE8F /* Products */,
+				00B2FEDCAC8A8BACE0F9A4E951E14F8C /* Pods */,
+				6424C268ABD48A6EBBB9F5EBD4336D49 /* Products */,
 				2B19CFCB34F3D9BF2E85F01CA8FB8A00 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -197,30 +345,9 @@
 		DA06FA06D73AF35520F85192793EE1F1 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E567FD927F15F65B257E1638F57DA75A /* AudienceHowzatSDK */,
+				9268604F72F74762E69C34C1051B6FB9 /* AudienceHowzatSDK */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		E567FD927F15F65B257E1638F57DA75A /* AudienceHowzatSDK */ = {
-			isa = PBXGroup;
-			children = (
-				F4727A088EE28259BBEA4FE40BBD963A /* Pod */,
-				3ECF4C3EA64FC65B97AA8BC3E7CBE3EC /* Support Files */,
-				33FAFA5A27281DAB00E29499 /* HowzatAudience.swift */,
-			);
-			name = AudienceHowzatSDK;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		F4727A088EE28259BBEA4FE40BBD963A /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				48AE2647B39BDD6FFEF03F8E78C47709 /* AudienceHowzatSDK.podspec */,
-				F4479A08D5165CA0A051CEF14DB3DD2B /* LICENSE */,
-				96F96F0B143EEFD83D9114885106071A /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,19 +361,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86886B2E4200AE03BEEB48FA0FE1602B /* Headers */ = {
+		481A2492AE1FF250F2ECCFE1A3C3709E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFCC89C7207FA6E9AAACD3F8EBA1C5C0 /* AudienceHowzatSDK-umbrella.h in Headers */,
+				9E5FE8315E835CDA51A2DBC50EEB7FA5 /* AudienceHowzatSDK-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C314DDBD2E7354D127C41834A1A98A35 /* Headers */ = {
+		4B38675B1F088F83D22C3D9645B9B3FE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3186E11CB57B7C2D5C548C0B3AF4CECA /* Pods-AudienceHowzatSDK_Example-umbrella.h in Headers */,
+				CB6C6D4E973C081562A8CBA3DFCE8B57 /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCCC8C6C0123B5F440448418C4E68D30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3B9D326F5EF9CBAB4EF42365E1E734 /* Pods-AudienceHowzatSDK_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,20 +390,21 @@
 /* Begin PBXNativeTarget section */
 		19ABA150668906DD6776E544DD10F8D8 /* AudienceHowzatSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24954E9D14C43B21E3AE3B556B78DCF1 /* Build configuration list for PBXNativeTarget "AudienceHowzatSDK" */;
+			buildConfigurationList = 45CF437ABB0DA39B067F6B8CD3396F19 /* Build configuration list for PBXNativeTarget "AudienceHowzatSDK" */;
 			buildPhases = (
-				86886B2E4200AE03BEEB48FA0FE1602B /* Headers */,
-				5C23501AD3D54D0D911C93A9F314A22D /* Sources */,
-				ACF92AA607777ED4549D5EB1810D3192 /* Frameworks */,
-				4278A368923F361440AF8E9F036222C6 /* Resources */,
+				481A2492AE1FF250F2ECCFE1A3C3709E /* Headers */,
+				8F11571A3B3C3B072C3A558962BBCFB8 /* Sources */,
+				C1739B564BD66C892F0E1F8166015787 /* Frameworks */,
+				29B806183E10677FF33C7C669D53946A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BC1931F444D9AE2E6DE9A88DCF8FA582 /* PBXTargetDependency */,
 			);
 			name = AudienceHowzatSDK;
 			productName = AudienceHowzatSDK;
-			productReference = 3601999104C15D8CB20AC62DF676145C /* AudienceHowzatSDK.framework */;
+			productReference = 3601999104C15D8CB20AC62DF676145C /* AudienceHowzatSDK */;
 			productType = "com.apple.product-type.framework";
 		};
 		657AED4632C71C6D47F1DD82D4EE13E9 /* Pods-AudienceHowzatSDK_Tests */ = {
@@ -283,26 +419,45 @@
 			buildRules = (
 			);
 			dependencies = (
-				B4E7AE792682955B7A77575050C27E3E /* PBXTargetDependency */,
+				CE014C3C999CDCC0F88DBA5733A467C4 /* PBXTargetDependency */,
 			);
 			name = "Pods-AudienceHowzatSDK_Tests";
 			productName = Pods_AudienceHowzatSDK_Tests;
 			productReference = 8BB4502EACE501D928320E539493F3E9 /* Pods-AudienceHowzatSDK_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
-		BD67F278EC720A7A6C40FC7505E6CE92 /* Pods-AudienceHowzatSDK_Example */ = {
+		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75C9AE3D78C8E47384CC7F3E9ADA7239 /* Build configuration list for PBXNativeTarget "Pods-AudienceHowzatSDK_Example" */;
+			buildConfigurationList = 8C4FD16026588AC8E41A482BF14DD9E6 /* Build configuration list for PBXNativeTarget "Starscream" */;
 			buildPhases = (
-				C314DDBD2E7354D127C41834A1A98A35 /* Headers */,
-				8251AC1B2C741E6FC70AA96FE22D50AB /* Sources */,
-				3026EDDEC0DC97A045DB2FE1BCD3B4C3 /* Frameworks */,
-				401D9BA28CBF0F0D298D8D4DE55CDBD5 /* Resources */,
+				4B38675B1F088F83D22C3D9645B9B3FE /* Headers */,
+				E33120F379636318BC2295A33FBA5898 /* Sources */,
+				B4E7E010B6DC28D1295E811B050F4A03 /* Frameworks */,
+				F9D636D177C2940FCFAA07206AC4AF25 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9188F5A7F69D8C474A2619B32C22D755 /* PBXTargetDependency */,
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD67F278EC720A7A6C40FC7505E6CE92 /* Pods-AudienceHowzatSDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32109FC5E08FD2C08B2DE48412469CEB /* Build configuration list for PBXNativeTarget "Pods-AudienceHowzatSDK_Example" */;
+			buildPhases = (
+				DCCC8C6C0123B5F440448418C4E68D30 /* Headers */,
+				828B459EE2DEF4EE99FBC3164FA05DD3 /* Sources */,
+				12FE887348231E9F9F459EAC31E89B06 /* Frameworks */,
+				D9D3C7D17D15CD2976EA41A4613B4B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9E92413F89FDA00A9CAC41F9CC41A42 /* PBXTargetDependency */,
+				B34307AA6D1B3EC71F61ECB5627E143B /* PBXTargetDependency */,
 			);
 			name = "Pods-AudienceHowzatSDK_Example";
 			productName = Pods_AudienceHowzatSDK_Example;
@@ -317,11 +472,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
-				TargetAttributes = {
-					19ABA150668906DD6776E544DD10F8D8 = {
-						LastSwiftMigration = 1250;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -332,26 +482,20 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 0E4D61533164E6CF3DBD5CEFC70FBE8F /* Products */;
+			productRefGroup = 6424C268ABD48A6EBBB9F5EBD4336D49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				19ABA150668906DD6776E544DD10F8D8 /* AudienceHowzatSDK */,
 				BD67F278EC720A7A6C40FC7505E6CE92 /* Pods-AudienceHowzatSDK_Example */,
 				657AED4632C71C6D47F1DD82D4EE13E9 /* Pods-AudienceHowzatSDK_Tests */,
+				9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		401D9BA28CBF0F0D298D8D4DE55CDBD5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4278A368923F361440AF8E9F036222C6 /* Resources */ = {
+		29B806183E10677FF33C7C669D53946A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,6 +503,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		89F049414E9AE81F00A7355DF545A284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D3C7D17D15CD2976EA41A4613B4B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D636D177C2940FCFAA07206AC4AF25 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -376,37 +534,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C23501AD3D54D0D911C93A9F314A22D /* Sources */ = {
+		828B459EE2DEF4EE99FBC3164FA05DD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33FAFA5B27281DAB00E29499 /* HowzatAudience.swift in Sources */,
-				E486C6029E576DD4B91E31C5E10ACB3F /* AudienceHowzatSDK-dummy.m in Sources */,
+				F021EDD169A17C305F1A035760C61D6A /* Pods-AudienceHowzatSDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8251AC1B2C741E6FC70AA96FE22D50AB /* Sources */ = {
+		8F11571A3B3C3B072C3A558962BBCFB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ABBBF9326CB7A194E51BF136B66743A /* Pods-AudienceHowzatSDK_Example-dummy.m in Sources */,
+				BAB66E54AC31F5C7C0DAED3A25D67F65 /* AudienceHowzatSDK-dummy.m in Sources */,
+				B6EFC51BAF6C4FCE132205EDD6546C47 /* HowzatAudience.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E33120F379636318BC2295A33FBA5898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7D60CB777F7AD0DFAE299C41D847F7 /* Compression.swift in Sources */,
+				1A310AC72C5E0C554DA782A9845F0773 /* Data+Extensions.swift in Sources */,
+				14294220B86AD5E9C027D552CBFE909F /* Engine.swift in Sources */,
+				F0D65408473C0D8306F4DE13EF7C37D8 /* FoundationHTTPHandler.swift in Sources */,
+				97AAAFDB9327CF9E6310970B4D8676F2 /* FoundationHTTPServerHandler.swift in Sources */,
+				0EB4A8B0658DBACF5A299F4B967EC800 /* FoundationSecurity.swift in Sources */,
+				5F3E7B1B5240C94A9C86CFA5D121098E /* FoundationTransport.swift in Sources */,
+				84C0198A334DB8D0B028FEA37404420D /* FrameCollector.swift in Sources */,
+				D49DF8FD56FB8D595E127C026E884BA4 /* Framer.swift in Sources */,
+				E0FF0C316349C5F11DDD1281F2AFD3C5 /* HTTPHandler.swift in Sources */,
+				4357DA2C61E569CBA628231292761DAF /* NativeEngine.swift in Sources */,
+				59F45376E030D05B9935A7475D55BC22 /* Security.swift in Sources */,
+				2CE3CE0C68280D114760E2C6E0F6FFB6 /* Server.swift in Sources */,
+				A9F1B7FA294B19C11892DC3EDB732BA1 /* Starscream-dummy.m in Sources */,
+				16BBA82058B3111DAED7728413F8443D /* StringHTTPHandler.swift in Sources */,
+				6A910EC46E44E8D775AAC7B27D1D14AA /* TCPTransport.swift in Sources */,
+				95BE4FC5B04A3449E5ED8F8017E559A5 /* Transport.swift in Sources */,
+				00733520BB34C92EFF9CEAA199FF5756 /* WebSocket.swift in Sources */,
+				8B2F75EBBE063AFF0C062F5717578E96 /* WebSocketServer.swift in Sources */,
+				751FC909A7C43A7E3C249A33EF5AA7F0 /* WSCompression.swift in Sources */,
+				A503859528DFE14BA7231E983147F33F /* WSEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9188F5A7F69D8C474A2619B32C22D755 /* PBXTargetDependency */ = {
+		B34307AA6D1B3EC71F61ECB5627E143B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 505B344993AE83384C11824D5E5F546E /* PBXContainerItemProxy */;
+		};
+		B9E92413F89FDA00A9CAC41F9CC41A42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AudienceHowzatSDK;
 			target = 19ABA150668906DD6776E544DD10F8D8 /* AudienceHowzatSDK */;
-			targetProxy = 576CD966591AADAE50C8296ECC57D44B /* PBXContainerItemProxy */;
+			targetProxy = A545AB853559BCD331B134B8388DAB2F /* PBXContainerItemProxy */;
 		};
-		B4E7AE792682955B7A77575050C27E3E /* PBXTargetDependency */ = {
+		BC1931F444D9AE2E6DE9A88DCF8FA582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 65EB9C5C36100B51F8F44C4FB1BC6EC7 /* PBXContainerItemProxy */;
+		};
+		CE014C3C999CDCC0F88DBA5733A467C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-AudienceHowzatSDK_Example";
 			target = BD67F278EC720A7A6C40FC7505E6CE92 /* Pods-AudienceHowzatSDK_Example */;
-			targetProxy = F1781ABDD4E6224A3C7726E1E3272220 /* PBXContainerItemProxy */;
+			targetProxy = 8B3571F105B5C4F88DA6E491D1D08CEA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -477,6 +675,103 @@
 			};
 			name = Debug;
 		};
+		34831DDC2F9E96A530D037CCF5FEBD7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15287B5C1A131BACF608F9F129A332C2 /* AudienceHowzatSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AudienceHowzatSDK/AudienceHowzatSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AudienceHowzatSDK/AudienceHowzatSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AudienceHowzatSDK/AudienceHowzatSDK.modulemap";
+				PRODUCT_MODULE_NAME = AudienceHowzatSDK;
+				PRODUCT_NAME = AudienceHowzatSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		849E88F259A178D69AED88CCD756434B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928CF1AEB93D6392BE5C3B4C296F44A3 /* Pods-AudienceHowzatSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AudienceHowzatSDK_Example/Pods-AudienceHowzatSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AudienceHowzatSDK_Example/Pods-AudienceHowzatSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1AB0EF9B439C12F9BEA8259BFC13139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD061D53BD510DFC9FA60EA44507881 /* Pods-AudienceHowzatSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AudienceHowzatSDK_Example/Pods-AudienceHowzatSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AudienceHowzatSDK_Example/Pods-AudienceHowzatSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		AA6AD82525F105009B8DB1100CE0F40D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A1383763E52FECC6FD3BD2FC01E0182 /* Pods-AudienceHowzatSDK_Tests.release.xcconfig */;
@@ -510,44 +805,11 @@
 			};
 			name = Release;
 		};
-		B88672F0E7D522DD31A8E74CEDA15611 /* Release */ = {
+		B3592AD85DA4258F346E9258C7DF242F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DD061D53BD510DFC9FA60EA44507881 /* Pods-AudienceHowzatSDK_Example.release.xcconfig */;
+			baseConfigurationReference = 3D2C9C58F170BAAD03932675D8D02074 /* AudienceHowzatSDK.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AudienceHowzatSDK_Example/Pods-AudienceHowzatSDK_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AudienceHowzatSDK_Example/Pods-AudienceHowzatSDK_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C0C9755FE3838E76E53CFF5F226CC1B8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2809B0C7027AC3682592F3F8A63C9AA4 /* AudienceHowzatSDK.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -559,7 +821,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/AudienceHowzatSDK/AudienceHowzatSDK-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AudienceHowzatSDK/AudienceHowzatSDK-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AudienceHowzatSDK/AudienceHowzatSDK.modulemap";
 				PRODUCT_MODULE_NAME = AudienceHowzatSDK;
@@ -567,8 +829,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -630,41 +891,10 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		D5DC68E2EEA6345B8BBD9024FB79A8AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53D6F04C43D5CC810E1BD10688AD2EBA /* AudienceHowzatSDK.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AudienceHowzatSDK/AudienceHowzatSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AudienceHowzatSDK/AudienceHowzatSDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AudienceHowzatSDK/AudienceHowzatSDK.modulemap";
-				PRODUCT_MODULE_NAME = AudienceHowzatSDK;
-				PRODUCT_NAME = AudienceHowzatSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -700,11 +930,10 @@
 			};
 			name = Debug;
 		};
-		FE90E12CC72B3F6CE564DC0B66F076B9 /* Debug */ = {
+		F672301BD43DB87BD6D8F16F3CF78CD3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 928CF1AEB93D6392BE5C3B4C296F44A3 /* Pods-AudienceHowzatSDK_Example.debug.xcconfig */;
+			baseConfigurationReference = E6B8353DB672E6C84ABAF6B044BC47F3 /* Starscream.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -713,19 +942,49 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AudienceHowzatSDK_Example/Pods-AudienceHowzatSDK_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AudienceHowzatSDK_Example/Pods-AudienceHowzatSDK_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA50BF0AE759309273DBE3363404E433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C1CF04602B9D61F89BCC51DEA7939B0 /* Starscream.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -744,11 +1003,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24954E9D14C43B21E3AE3B556B78DCF1 /* Build configuration list for PBXNativeTarget "AudienceHowzatSDK" */ = {
+		32109FC5E08FD2C08B2DE48412469CEB /* Build configuration list for PBXNativeTarget "Pods-AudienceHowzatSDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C0C9755FE3838E76E53CFF5F226CC1B8 /* Debug */,
-				D5DC68E2EEA6345B8BBD9024FB79A8AD /* Release */,
+				849E88F259A178D69AED88CCD756434B /* Debug */,
+				A1AB0EF9B439C12F9BEA8259BFC13139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45CF437ABB0DA39B067F6B8CD3396F19 /* Build configuration list for PBXNativeTarget "AudienceHowzatSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3592AD85DA4258F346E9258C7DF242F /* Debug */,
+				34831DDC2F9E96A530D037CCF5FEBD7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -762,11 +1030,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75C9AE3D78C8E47384CC7F3E9ADA7239 /* Build configuration list for PBXNativeTarget "Pods-AudienceHowzatSDK_Example" */ = {
+		8C4FD16026588AC8E41A482BF14DD9E6 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE90E12CC72B3F6CE564DC0B66F076B9 /* Debug */,
-				B88672F0E7D522DD31A8E74CEDA15611 /* Release */,
+				FA50BF0AE759309273DBE3363404E433 /* Debug */,
+				F672301BD43DB87BD6D8F16F3CF78CD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

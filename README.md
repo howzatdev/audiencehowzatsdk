@@ -1,29 +1,11 @@
-# AudienceHowzatSDK
+# Dev
 
-[![CI Status](https://img.shields.io/travis/jungleesubbu/AudienceHowzatSDK.svg?style=flat)](https://travis-ci.org/jungleesubbu/AudienceHowzatSDK)
-[![Version](https://img.shields.io/cocoapods/v/AudienceHowzatSDK.svg?style=flat)](https://cocoapods.org/pods/AudienceHowzatSDK)
-[![License](https://img.shields.io/cocoapods/l/AudienceHowzatSDK.svg?style=flat)](https://cocoapods.org/pods/AudienceHowzatSDK)
-[![Platform](https://img.shields.io/cocoapods/p/AudienceHowzatSDK.svg?style=flat)](https://cocoapods.org/pods/AudienceHowzatSDK)
+# To register your name to cocospod org
+pod trunk register goel.prateek27@gmail.com 'Subbu' --description='macbook pro'
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-AudienceHowzatSDK is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'AudienceHowzatSDK'
-```
-
-## Author
-
-jungleesubbu, subrahmanyam@jungleegames.com
-
-## License
-
-AudienceHowzatSDK is available under the MIT license. See the LICENSE file for more info.
+# Publish new version
+1.cd to root project
+2.pod lib lint AudienceHowzatSDK.podspec
+This command will used to validate the app
+3.pod trunk push AudienceHowzatSDK.podspec
+This will push new version to cocospod org cloud

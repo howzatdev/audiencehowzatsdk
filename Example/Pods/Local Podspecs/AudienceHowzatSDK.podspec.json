@@ -1,22 +1,30 @@
 {
   "name": "AudienceHowzatSDK",
   "version": "0.1.0",
-  "summary": "A short description of AudienceHowzatSDK.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/jungleesubbu/AudienceHowzatSDK",
+  "summary": "HowzatAudienceSDK by Howzat team",
+  "description": "Howzat SDK is an iOS cocospod SDK.You can use this SDK to use Audience",
+  "homepage": "https://github.com/howzatdev/audiencehowzatsdk",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "jungleesubbu": "subrahmanyam@jungleegames.com"
+    "howzatdev": "devaccounts@howzat.com"
   },
   "source": {
-    "git": "https://github.com/jungleesubbu/AudienceHowzatSDK.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/howzatdev/audiencehowzatsdk.git",
+    "tag": "0.1.0",
+    "branch": "master"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "12.0"
   },
-  "source_files": "AudienceHowzatSDK/Classes/**/*"
+  "swift_versions": "5.0",
+  "source_files": "AudienceHowzatSDK/Classes/**/*",
+  "dependencies": {
+    "Starscream": [
+      "~> 4.0.0"
+    ]
+  },
+  "swift_version": "5.0"
 }
