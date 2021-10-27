@@ -1,7 +1,7 @@
 # Dev
 
 # To register your name to cocospod org
-pod trunk register goel.prateek27@gmail.com 'Subbu' --description='macbook pro'
+pod trunk register devaccounts@howzat.com 'Dev' --description='macbook pro'
 
 # Publish new version
 1.cd to root project
