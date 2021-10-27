@@ -16,6 +16,10 @@ public class HowzatAudience: WebSocketDelegate{
     public  func printInstallationStatus(){
             print("Howzat Audience installation is success")
         }
+
+          public  func test(){
+            print("Howzat Audience installation is success")
+        }
         
         var socket: WebSocket!
                var isConnected = false
@@ -32,6 +36,9 @@ public class HowzatAudience: WebSocketDelegate{
            }
            
           public func didReceive(event: WebSocketEvent, client: WebSocket) {
+              print("inside didreceive");
+              print(event);
+              print(client);
                switch event {
                case .connected(let headers):
                    isConnected = true
