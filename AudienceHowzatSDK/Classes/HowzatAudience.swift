@@ -23,7 +23,7 @@ public class HowzatAudience: WebSocketDelegate{
         
         var socket: WebSocket!
                var isConnected = false
-           private  var baseUrl = "wss://messenger-stage.jungleerummyqa.com"
+           private  var baseUrl = "wss://cerebro.carromstars.com"
                let server = WebSocketServer()
            public func initializeConnection(app: String, orgID: String, userID: String, token: String) {
                var request = URLRequest(url: URL(string: "\(baseUrl)/ws/\(orgID)/\(userID)/\(token)")!)
