@@ -20,11 +20,20 @@ public class HowzatAudience: WebSocketDelegate{
           public  func test(){
             print("Howzat Audience installation is success")
         }
-        
+
+  
         var socket: WebSocket!
-               var isConnected = false
-           private  var baseUrl = "wss://cerebro.carromstars.com"
-               let server = WebSocketServer()
+        var isConnected = false
+        private  var baseUrl = "wss://cerebro.carromstars.com"
+        let server = WebSocketServer()
+        public func getAudienceUrl() {
+            return baseUrl
+        }
+    
+        public func setAudienceUrl(url: String) {
+            baseUrl = url
+        }
+      
            public func initializeConnection(app: String, orgID: String, userID: String, token: String) {
                print("URL");
                print("\(baseUrl)/ws/\(orgID)/\(userID)/\(token)");
