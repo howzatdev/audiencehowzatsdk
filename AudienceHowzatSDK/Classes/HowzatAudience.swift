@@ -26,9 +26,11 @@ public class HowzatAudience: WebSocketDelegate{
            private  var baseUrl = "wss://cerebro.carromstars.com"
                let server = WebSocketServer()
            public func initializeConnection(app: String, orgID: String, userID: String, token: String) {
+               print("URL");
+               print("\(baseUrl)/ws/\(orgID)/\(userID)/\(token)");
                var request = URLRequest(url: URL(string: "\(baseUrl)/ws/\(orgID)/\(userID)/\(token)")!)
                request.timeoutInterval = 5
-               print("INIT CALLED");
+               print("INIT CALLEDD");
                socket = WebSocket(request: request)
                socket.delegate = self
                socket.connect()
