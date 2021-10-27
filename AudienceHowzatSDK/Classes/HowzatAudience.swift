@@ -26,7 +26,7 @@ public class HowzatAudience: WebSocketDelegate{
         var isConnected = false
         private  var baseUrl = "wss://cerebro.carromstars.com"
         let server = WebSocketServer()
-        public func getAudienceUrl() {
+        public func getAudienceUrl() -> String {
             return baseUrl
         }
     
