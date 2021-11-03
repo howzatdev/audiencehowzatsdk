@@ -1,15 +1,19 @@
-//
-//  HowzatAudience.swift
-//  AudienceHowzatSDK
-//
-//  Created by Subrahmanyam Pampana on 10/26/21.
-//
-
-
 import Foundation
 import Starscream
 
+enum ResponseActionType: String {
+    case SMINAPPLIST = "sm-inapp-list"
+    case SMINAPP = "sm-inapp"
+    case SMINAPPDELETE = "sm-inapp-delete"
+}
+
+public protocol SendResponseDelegate {
+    func sendResponse(dataString: String)
+}
+
 public class HowzatAudience: WebSocketDelegate{
+    
+   public var responseDelegate: SendResponseDelegate!
     
     public init(){}
     
@@ -34,40 +38,58 @@ public class HowzatAudience: WebSocketDelegate{
         baseUrl = url
     }
     
-    public func initializeConnection(app: String, orgID: String, userID: String, token: String, fullUrl: String?) {
+    public func initializeConnection(app: String, orgID: String, userID: String, token: String, fullUrl: String) {
         var request: URLRequest;
-        print("URL");
         print("\(baseUrl)/ws/\(orgID)/\(userID)/\(token)");
-        if(fullUrl != nil) {
-            request = URLRequest(url: URL(string: "\(String(describing: fullUrl))")!)
+        print("\(fullUrl)");
+        if(fullUrl != "") {
+            request = URLRequest(url: URL(string: "\(fullUrl)")!)
         } else {
             request = URLRequest(url: URL(string: "\(baseUrl)/ws/\(orgID)/\(userID)/\(token)")!)
         }
         
         request.timeoutInterval = 5
-        print("INIT CALLEDD");
         socket = WebSocket(request: request)
         socket.delegate = self
         socket.connect()
         
     }
     
+    func websocketDidConnect(ws: WebSocket) {
+        print("websocket is connected")
+    }
+
+    func websocketDidDisconnect(ws: WebSocket, error: NSError?) {
+        print("websocket is disconnected: \(error?.localizedDescription ?? "default value")")
+    }
+
+    func websocketDidReceiveMessage(ws: WebSocket, text: String) {
+        print("Received text: \(text)")
+    }
+
+    func websocketDidReceiveData(ws: WebSocket, data: NSData) {
+        print("Received data: \(data.length)")
+    }
+
+    func websocketDidReceivePong(socket: WebSocket) {
+        print("Got pong!")
+    }
+    
     public func didReceive(event: WebSocketEvent, client: WebSocket) {
-        print("inside didreceive");
-        print(event);
-        print(client);
         switch event {
         case .connected(let headers):
             isConnected = true
-            print("websocket is connected: \(headers)")
+            print("websocket is connectedd: \(headers)")
         case .disconnected(let reason, let code):
             isConnected = false
-            print("websocket is disconnected: \(reason) with code: \(code)")
+            print("websocket is disconnectedd: \(reason) with code: \(code)")
         case .text(let string):
-            print("Received text: \(string)")
+            print("Received textt: \(string)")
             let data = convertToDictionary(text: string)
-            if(data?["action"] != nil) {
-                socket.write(string: string)
+           
+            if(data?["action"] != nil && (data?["action"] as! String == "sm-inapp" || data?["action"] as! String == "sm-inapp-list" || data?["action"] as! String == "sm-inapp-delete")) {
+                let convertedData = convertToJsonString(from: data!) ?? ""
+                responseDelegate.sendResponse(dataString: convertedData)
             }
         case .binary(let data):
             print("Received data: \(data.count)")
@@ -96,6 +118,31 @@ public class HowzatAudience: WebSocketDelegate{
         }
     }
     
+    public func closeConnection() {
+        print("DISCONNECTING");
+        socket.disconnect();
+    }
+    
+    public func requestInAppList(trackingID: String, notify: Bool) -> Bool {
+        if(socket != nil) {
+            let data = "{'action':'cm-inapp-list'}";
+           socket.write(string: data);
+        
+            return true;
+        }
+
+        return false
+    }
+    
+    public func requestInAppDelete(trackingID: String, notify: Bool) -> Bool {
+        if(socket != nil) {
+            let data = "{'action':'cm-inapp-delete','data':{'trackingId':\(trackingID),'notify':\(String(notify))}}";
+            socket.write(string: data);
+            return true;
+        }
+        return false
+    }
+    
     func convertToDictionary(text: String) -> [String: Any]? {
         if let data = text.data(using: .utf8) {
             do {
@@ -106,4 +153,12 @@ public class HowzatAudience: WebSocketDelegate{
         }
         return nil
     }
+    func convertToJsonString(from object:Any) -> String? {
+        guard let data = try? JSONSerialization.data(withJSONObject: object, options: []) else {
+            return nil
+        }
+        return String(data: data, encoding: String.Encoding.utf8)
+    }
+
+    
 }
