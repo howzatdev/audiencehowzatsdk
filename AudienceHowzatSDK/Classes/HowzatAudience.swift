@@ -52,7 +52,7 @@ public class HowzatAudience: WebSocketDelegate{
         socket = WebSocket(request: request)
         socket.delegate = self
         socket.connect()
-        let timer = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true, block: { timer in
+        _ = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true, block: { timer in
             
             self.socket.write(ping: Data()) {
                 print("PING SENT SUCCESSFULLY");
@@ -136,14 +136,7 @@ public class HowzatAudience: WebSocketDelegate{
         if(socket != nil) {
             let str = "{\"action\": \"cm-inapp-list\"}"
             let data = Data(str.utf8)
-            
-            do {
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                socket.write(data: data);
-                
-            } catch let error as NSError {
-                print("Failed to load: \(error.localizedDescription)")
-            }
+            socket.write(data: data);
             
             return true;
         }
@@ -155,16 +148,8 @@ public class HowzatAudience: WebSocketDelegate{
         if(socket != nil) {
             
             let str = "{\"action\": \"cm-inapp-delete\", \"data\": {\"trackingId\": \"\(String(trackingID))\", \"notify\": \"\(String(notify))\"}}"
-            
             let data = Data(str.utf8)
-            
-            do {
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                socket.write(data: data);
-                
-            } catch let error as NSError {
-                print("Failed to load: \(error.localizedDescription)")
-            }
+            socket.write(data: data);            
             return true;
         }
         return false
