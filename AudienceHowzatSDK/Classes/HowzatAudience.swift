@@ -13,7 +13,7 @@ public protocol SendResponseDelegate {
 
 public class HowzatAudience: WebSocketDelegate{
     
-   public var responseDelegate: SendResponseDelegate!
+    public var responseDelegate: SendResponseDelegate!
     
     public init(){}
     
@@ -52,25 +52,31 @@ public class HowzatAudience: WebSocketDelegate{
         socket = WebSocket(request: request)
         socket.delegate = self
         socket.connect()
-        
+        let timer = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true, block: { timer in
+            
+            self.socket.write(ping: Data()) {
+                print("PING SENT SUCCESSFULLY");
+            }
+        })
     }
     
     func websocketDidConnect(ws: WebSocket) {
         print("websocket is connected")
     }
-
+    
     func websocketDidDisconnect(ws: WebSocket, error: NSError?) {
         print("websocket is disconnected: \(error?.localizedDescription ?? "default value")")
+        
     }
-
+    
     func websocketDidReceiveMessage(ws: WebSocket, text: String) {
         print("Received text: \(text)")
     }
-
+    
     func websocketDidReceiveData(ws: WebSocket, data: NSData) {
         print("Received data: \(data.length)")
     }
-
+    
     func websocketDidReceivePong(socket: WebSocket) {
         print("Got pong!")
     }
@@ -83,10 +89,11 @@ public class HowzatAudience: WebSocketDelegate{
         case .disconnected(let reason, let code):
             isConnected = false
             print("websocket is disconnectedd: \(reason) with code: \(code)")
+            self.socket.connect()
         case .text(let string):
             print("Received textt: \(string)")
             let data = convertToDictionary(text: string)
-           
+            
             if(data?["action"] != nil && (data?["action"] as! String == "sm-inapp" || data?["action"] as! String == "sm-inapp-list" || data?["action"] as! String == "sm-inapp-delete")) {
                 let convertedData = convertToJsonString(from: data!) ?? ""
                 responseDelegate.sendResponse(dataString: convertedData)
@@ -96,6 +103,7 @@ public class HowzatAudience: WebSocketDelegate{
         case .ping(_):
             break
         case .pong(_):
+            print("PONG RECEIVED")
             break
         case .viabilityChanged(_):
             break
@@ -103,6 +111,7 @@ public class HowzatAudience: WebSocketDelegate{
             break
         case .cancelled:
             isConnected = false
+            self.socket.connect()
         case .error(let error):
             isConnected = false
             handleError(error)
@@ -125,19 +134,37 @@ public class HowzatAudience: WebSocketDelegate{
     
     public func requestInAppList(trackingID: String, notify: Bool) -> Bool {
         if(socket != nil) {
-            let data = "{'action':'cm-inapp-list'}";
-           socket.write(string: data);
-        
+            let str = "{\"action\": \"cm-inapp-list\"}"
+            let data = Data(str.utf8)
+            
+            do {
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                socket.write(data: data);
+                
+            } catch let error as NSError {
+                print("Failed to load: \(error.localizedDescription)")
+            }
+            
             return true;
         }
-
+        
         return false
     }
     
     public func requestInAppDelete(trackingID: String, notify: Bool) -> Bool {
         if(socket != nil) {
-            let data = "{'action':'cm-inapp-delete','data':{'trackingId':\(trackingID),'notify':\(String(notify))}}";
-            socket.write(string: data);
+            
+            let str = "{\"action\": \"cm-inapp-delete\", \"data\": {\"trackingId\": \"\(String(trackingID))\", \"notify\": \"\(String(notify))\"}}"
+            
+            let data = Data(str.utf8)
+            
+            do {
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                socket.write(data: data);
+                
+            } catch let error as NSError {
+                print("Failed to load: \(error.localizedDescription)")
+            }
             return true;
         }
         return false
@@ -159,6 +186,6 @@ public class HowzatAudience: WebSocketDelegate{
         }
         return String(data: data, encoding: String.Encoding.utf8)
     }
-
+    
     
 }
