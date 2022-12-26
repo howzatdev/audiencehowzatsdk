@@ -94,7 +94,7 @@ public class HowzatAudience: WebSocketDelegate{
             print("Received textt: \(string)")
             let data = convertToDictionary(text: string)
             
-            if(data?["action"] != nil && (data?["action"] as! String == "sm-inapp" || data?["action"] as! String == "sm-inapp-list" || data?["action"] as! String == "sm-inapp-delete")) {
+            if(data?["action"] != nil && (data?["action"] as! String == "sm-inapp" || data?["action"] as! String == "sm-inapp-list" || data?["action"] as! String == "sm-inapp-delete" || data?["action"] as! String == "sm-mission-status")) {
                 let convertedData = convertToJsonString(from: data!) ?? ""
                 responseDelegate.sendResponse(dataString: convertedData)
             }
