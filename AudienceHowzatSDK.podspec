@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AudienceHowzatSDK'
-  s.version          = '0.1.10'
+  s.version          = '0.1.11'
   s.summary          = 'HowzatAudienceSDK by Howzat team'
 
 # This description is used to generate tags and improve search results.
@@ -30,5 +30,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'Starscream', '4.0.0'
+  s.dependency 'Starscream', '4.0.4'
 end
