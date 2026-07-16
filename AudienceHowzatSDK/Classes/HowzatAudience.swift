@@ -38,11 +38,15 @@ public class HowzatAudience: WebSocketDelegate{
         baseUrl = url
     }
     
-    public func initializeConnection(app: String, orgID: String, userID: String, token: String, fullUrl: String) {
+    public func initializeConnection(app: String, orgID: String, userID: String, token: String, fullUrl: String, jwtEnabled: Bool = false) {
         var request: URLRequest;
         print("\(baseUrl)/ws/\(orgID)/\(userID)/\(token)");
         print("\(fullUrl)");
-        if(fullUrl != "") {
+        if(jwtEnabled) {
+            request = URLRequest(url: URL(string: "\(baseUrl)/ws/\(orgID)")!)
+            request.setValue(token, forHTTPHeaderField: "Authorization")
+            request.setValue(userID, forHTTPHeaderField: "x-uid")
+        } else if(fullUrl != "") {
             request = URLRequest(url: URL(string: "\(fullUrl)")!)
         } else {
             request = URLRequest(url: URL(string: "\(baseUrl)/ws/\(orgID)/\(userID)/\(token)")!)
